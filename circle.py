@@ -2,11 +2,11 @@ from math import pi
 
 class Circle(object):
     def __init__(self, radius = None, diameter = None):
-        if radius is not None and type(radius) is int and type(radius) is float:
+        if radius is not None and type(radius) is int or type(radius) is float:
             self._radius = radius
             self._diameter = radius * 2
         else:
-            if diameter is not None and type(diameter) is int and type(diameter) is float:
+            if diameter is not None and type(diameter) is int or type(diameter) is float:
                 self._diameter = diameter
                 self._radius = diameter * 0.5
             else:

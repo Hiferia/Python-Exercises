@@ -10,7 +10,7 @@ class Circle(object):
                 self._diameter = diameter
                 self._radius = diameter * 0.5
             else:
-                raise TypeError("At least one parameter must be defined and it must be int of float!") 
+                raise TypeError("At least one parameter must be defined and it must be int or float!") 
         self._area = pi * self._radius ** 2
     
     @property
